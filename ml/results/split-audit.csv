@@ -1,0 +1,11 @@
+task,fold,train_images,test_images,train_fruits,test_fruits,fruit_overlap
+ripening_stage_classification,1,11778,2932,385,93,0
+ripening_stage_classification,2,11754,2956,382,96,0
+ripening_stage_classification,3,11784,2926,381,97,0
+ripening_stage_classification,4,11794,2916,385,93,0
+ripening_stage_classification,5,11730,2980,379,99,0
+days_to_stage4_regression,1,7098,1736,340,86,0
+days_to_stage4_regression,2,7082,1752,341,85,0
+days_to_stage4_regression,3,6994,1840,341,85,0
+days_to_stage4_regression,4,7164,1670,341,85,0
+days_to_stage4_regression,5,6998,1836,341,85,0

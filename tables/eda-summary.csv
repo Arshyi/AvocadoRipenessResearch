@@ -1,0 +1,4 @@
+storage_group,storage_description,independent_fruits,workbook_records,available_jpegs,median_first_stage4_day,iqr_first_stage4_day
+T10,"10 C, 85% RH",192,8870,8866,17.0,3.0
+T20,"20 C, 85% RH",143,2926,2920,7.0,2.0
+Tam,Ambient,143,2926,2924,7.0,1.0

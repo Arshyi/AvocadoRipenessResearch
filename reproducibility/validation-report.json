@@ -1,0 +1,231 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "table:data/dataset_inventory.csv",
+      "status": "PASS",
+      "observed_rows": 9,
+      "expected_rows": 9,
+      "columns": 20
+    },
+    {
+      "check": "table:data/processed/hass_avocado_rgb_metadata.csv",
+      "status": "PASS",
+      "observed_rows": 14722,
+      "expected_rows": 14722,
+      "columns": 14
+    },
+    {
+      "check": "table:data/processed/hass_avocado_rgb_features.csv",
+      "status": "PASS",
+      "observed_rows": 14710,
+      "expected_rows": 14710,
+      "columns": 103
+    },
+    {
+      "check": "table:tables/eda-summary.csv",
+      "status": "PASS",
+      "observed_rows": 3,
+      "expected_rows": 3,
+      "columns": 7
+    },
+    {
+      "check": "table:tables/model-comparison.csv",
+      "status": "PASS",
+      "observed_rows": 8,
+      "expected_rows": 8,
+      "columns": 26
+    },
+    {
+      "check": "table:tables/storage-holdout-results.csv",
+      "status": "PASS",
+      "observed_rows": 3,
+      "expected_rows": 3,
+      "columns": 10
+    },
+    {
+      "check": "table:tables/feature-importance.csv",
+      "status": "PASS",
+      "observed_rows": 86,
+      "expected_rows": 86,
+      "columns": 2
+    },
+    {
+      "check": "table:ml/results/fold-metrics.csv",
+      "status": "PASS",
+      "observed_rows": 40,
+      "expected_rows": 40,
+      "columns": 10
+    },
+    {
+      "check": "table:ml/results/split-audit.csv",
+      "status": "PASS",
+      "observed_rows": 10,
+      "expected_rows": 10,
+      "columns": 7
+    },
+    {
+      "check": "table:ml/results/oof-predictions.csv",
+      "status": "PASS",
+      "observed_rows": 94176,
+      "expected_rows": 94176,
+      "columns": 7
+    },
+    {
+      "check": "table:procurement/bill-of-materials.csv",
+      "status": "PASS",
+      "observed_rows": 44,
+      "expected_rows": 44,
+      "columns": 20
+    },
+    {
+      "check": "fruit_split_overlap",
+      "status": "PASS",
+      "observed_max_overlap": 0
+    },
+    {
+      "check": "quality:workbook_rows",
+      "status": "PASS",
+      "observed": 14722,
+      "expected": 14722
+    },
+    {
+      "check": "quality:jpeg_files",
+      "status": "PASS",
+      "observed": 14710,
+      "expected": 14710
+    },
+    {
+      "check": "quality:matched_rows",
+      "status": "PASS",
+      "observed": 14710,
+      "expected": 14710
+    },
+    {
+      "check": "quality:missing_image_rows",
+      "status": "PASS",
+      "observed": 12,
+      "expected": 12
+    },
+    {
+      "check": "ml:best_balanced_accuracy",
+      "status": "PASS",
+      "observed": 0.7307329032777372
+    },
+    {
+      "check": "ml:best_days_to_stage4_mae",
+      "status": "PASS",
+      "observed": 1.8531579960773636
+    },
+    {
+      "check": "required_file:reports/data-quality-summary.json",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:analysis/eda-summary.json",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:ml/results/summary.json",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:ml/artifacts/final_color_stage_model.joblib",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:proposal/avocado-research-proposal.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:output/pdf/avocado-research-proposal.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:communications/collaborator-outreach-draft.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:models/kinetic/candidate_models.py",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:reproducibility/run_all.ps1",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-a-existing-papers.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-b-bibliography.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-c-public-datasets.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-d-hardware-catalogue.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-e-mathematical-models.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-f-software-stack.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-g-repository-structure.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-h-data-quality.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-i-ml-results.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-j-statistical-plan.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-k-reproducibility.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required_file:appendices/appendix-l-risk-evidence.md",
+      "status": "PASS"
+    },
+    {
+      "check": "sha256:data/raw/Hass-Avocado-Ripening-Photographic-Dataset-v1.zip",
+      "status": "PASS",
+      "observed": "FB14C3D8C6FB59A20BFFB579A5FE97C7EBA7030F4420882E8A75B575FF0C5BB6",
+      "expected": "FB14C3D8C6FB59A20BFFB579A5FE97C7EBA7030F4420882E8A75B575FF0C5BB6"
+    },
+    {
+      "check": "sha256:data/raw/Avocado-Strawberry-Ripening-Stages-v1.zip",
+      "status": "PASS",
+      "observed": "48B8E6B84DD3C58643F624C12689AF6E81A73E2A4CA8D7EB5BBFA7C507BE4224",
+      "expected": "48B8E6B84DD3C58643F624C12689AF6E81A73E2A4CA8D7EB5BBFA7C507BE4224"
+    },
+    {
+      "check": "sha256:data/raw/DeepHS-Fruit-annotations-upd-2024-01-09.zip",
+      "status": "PASS",
+      "observed": "14275450E362684BC379A5AAF6C845CF82B0F9D5912036B9401D59A4B964A3F3",
+      "expected": "14275450E362684BC379A5AAF6C845CF82B0F9D5912036B9401D59A4B964A3F3"
+    },
+    {
+      "check": "sha256:data/raw/DeepHS-Fruit-readme.txt",
+      "status": "PASS",
+      "observed": "F4CDD2EFC40FF49740EE7CAD118CB019E227BF119F24506194919E15380513CA",
+      "expected": "F4CDD2EFC40FF49740EE7CAD118CB019E227BF119F24506194919E15380513CA"
+    }
+  ],
+  "failure_count": 0,
+  "note": "Scientific claim boundaries still require human review; this validates files, rows, selected metrics, grouping, and checksums."
+}

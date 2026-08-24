@@ -1,0 +1,246 @@
+{
+  "source_doi": "10.17632/3xd9n945v8.1",
+  "predictor_scope": "foreground-aware RGB/HSV/texture summaries only; no filename, fruit ID, day, side, stage, or storage variable is a predictor",
+  "classification": {
+    "n_images": 14710,
+    "n_fruits": 478,
+    "best_non_dummy_model": "Histogram gradient boosting",
+    "models": {
+      "Prior-only dummy": {
+        "point": {
+          "accuracy": 0.242556084296397,
+          "balanced_accuracy": 0.2,
+          "macro_f1": 0.07808294124083598,
+          "ordinal_mae": 1.97675050985724
+        },
+        "ci95": {
+          "accuracy": [
+            0.232946262032668,
+            0.2511528351719537
+          ],
+          "balanced_accuracy": [
+            0.2,
+            0.2
+          ],
+          "macro_f1": [
+            0.07557385709975992,
+            0.08029485375004204
+          ],
+          "ordinal_mae": [
+            1.9423033512040029,
+            2.0108884045089446
+          ]
+        }
+      },
+      "Multinomial logistic": {
+        "point": {
+          "accuracy": 0.7042828008157715,
+          "balanced_accuracy": 0.6992144680516021,
+          "macro_f1": 0.697841317722719,
+          "ordinal_mae": 0.3205302515295717
+        },
+        "ci95": {
+          "accuracy": [
+            0.6928690167342266,
+            0.7164490844317685
+          ],
+          "balanced_accuracy": [
+            0.6881885976804555,
+            0.7109404121465042
+          ],
+          "macro_f1": [
+            0.6867508065512927,
+            0.7098326288788988
+          ],
+          "ordinal_mae": [
+            0.30504748760095873,
+            0.335848751832547
+          ]
+        }
+      },
+      "Random forest": {
+        "point": {
+          "accuracy": 0.7369136641740313,
+          "balanced_accuracy": 0.7258924304517738,
+          "macro_f1": 0.7270245232682724,
+          "ordinal_mae": 0.2804894629503739
+        },
+        "ci95": {
+          "accuracy": [
+            0.7242502576279659,
+            0.7498983283121212
+          ],
+          "balanced_accuracy": [
+            0.7141659796444259,
+            0.7386688567864172
+          ],
+          "macro_f1": [
+            0.7151692968822614,
+            0.7394700721251097
+          ],
+          "ordinal_mae": [
+            0.2654906265290876,
+            0.29578001330129833
+          ]
+        }
+      },
+      "Histogram gradient boosting": {
+        "point": {
+          "accuracy": 0.7387491502379334,
+          "balanced_accuracy": 0.7307329032777372,
+          "macro_f1": 0.7303606557954695,
+          "ordinal_mae": 0.27838205302515295
+        },
+        "ci95": {
+          "accuracy": [
+            0.7265418021642183,
+            0.7508286204998987
+          ],
+          "balanced_accuracy": [
+            0.7191989626706348,
+            0.7427908709376285
+          ],
+          "macro_f1": [
+            0.7185164711687021,
+            0.7421985382879497
+          ],
+          "ordinal_mae": [
+            0.26378649354412487,
+            0.292955558807693
+          ]
+        }
+      }
+    },
+    "storage_holdout": [
+      {
+        "model": "Histogram gradient boosting",
+        "held_out_storage": "T10",
+        "train_images": 5844,
+        "test_images": 8866,
+        "train_fruits": 286,
+        "test_fruits": 192,
+        "accuracy": 0.4778930746672682,
+        "balanced_accuracy": 0.49714641379739427,
+        "macro_f1": 0.46259586092589566,
+        "ordinal_mae": 0.6045567335889916
+      },
+      {
+        "model": "Histogram gradient boosting",
+        "held_out_storage": "T20",
+        "train_images": 11790,
+        "test_images": 2920,
+        "train_fruits": 335,
+        "test_fruits": 143,
+        "accuracy": 0.6801369863013699,
+        "balanced_accuracy": 0.6880072131197441,
+        "macro_f1": 0.6767875415248323,
+        "ordinal_mae": 0.33664383561643835
+      },
+      {
+        "model": "Histogram gradient boosting",
+        "held_out_storage": "Tam",
+        "train_images": 11786,
+        "test_images": 2924,
+        "train_fruits": 335,
+        "test_fruits": 143,
+        "accuracy": 0.6179890560875513,
+        "balanced_accuracy": 0.6315517147485137,
+        "macro_f1": 0.6080809923036689,
+        "ordinal_mae": 0.3953488372093023
+      }
+    ]
+  },
+  "days_to_stage4": {
+    "definition": "Dataset-derived days until first observation at ripening index stage 4; only observations on or before that endpoint",
+    "n_images": 8834,
+    "n_fruits": 426,
+    "best_non_dummy_model": "Histogram gradient boosting regressor",
+    "models": {
+      "Median dummy": {
+        "point": {
+          "mae": 3.7457550373556714,
+          "rmse": 4.754345747474548,
+          "r2": -0.033650106477298936
+        },
+        "ci95": {
+          "mae": [
+            3.6147321428571426,
+            3.8760861200376593
+          ],
+          "rmse": [
+            4.596590998561085,
+            4.907503451952687
+          ],
+          "r2": [
+            -0.05424925632290926,
+            -0.017681994472555043
+          ]
+        }
+      },
+      "Ridge regression": {
+        "point": {
+          "mae": 2.1578311635565885,
+          "rmse": 2.9775613612576457,
+          "r2": 0.5945722501573343
+        },
+        "ci95": {
+          "mae": [
+            2.083213988250287,
+            2.23337566598201
+          ],
+          "rmse": [
+            2.783503028426249,
+            3.250997990013464
+          ],
+          "r2": [
+            0.5147379845100314,
+            0.645446947439756
+          ]
+        }
+      },
+      "Random forest regressor": {
+        "point": {
+          "mae": 1.8807773328115682,
+          "rmse": 2.65627333652285,
+          "r2": 0.6773456263040243
+        },
+        "ci95": {
+          "mae": [
+            1.8101280802119906,
+            1.9478655177175088
+          ],
+          "rmse": [
+            2.569635319055749,
+            2.7403639787619514
+          ],
+          "r2": [
+            0.6522556197364403,
+            0.6991327057276054
+          ]
+        }
+      },
+      "Histogram gradient boosting regressor": {
+        "point": {
+          "mae": 1.8531579960773636,
+          "rmse": 2.636081004555044,
+          "r2": 0.6822324584526356
+        },
+        "ci95": {
+          "mae": [
+            1.7828036430824317,
+            1.9216353867430942
+          ],
+          "rmse": [
+            2.5424532433284606,
+            2.7273344874101664
+          ],
+          "r2": [
+            0.6551926734345436,
+            0.7044588731766113
+          ]
+        }
+      }
+    }
+  },
+  "validation_boundary": "DATA-DEMONSTRATED only for internal fruit-grouped validation in this single study. Storage-condition holdout is a stress test, not independent harvest-season or external-device validation."
+}

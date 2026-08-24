@@ -1,0 +1,46 @@
+{
+  "workbook_records": 14722,
+  "available_images": 14710,
+  "independent_fruits": 478,
+  "missing_image_records": 12,
+  "stage_counts": {
+    "1": 3572,
+    "2": 2234,
+    "3": 2758,
+    "4": 3294,
+    "5": 2864
+  },
+  "storage_summary": [
+    {
+      "storage_group": "T10",
+      "storage_description": "10 C, 85% RH",
+      "independent_fruits": 192,
+      "workbook_records": 8870,
+      "available_jpegs": 8866,
+      "median_first_stage4_day": 17.0,
+      "iqr_first_stage4_day": 3.0
+    },
+    {
+      "storage_group": "T20",
+      "storage_description": "20 C, 85% RH",
+      "independent_fruits": 143,
+      "workbook_records": 2926,
+      "available_jpegs": 2920,
+      "median_first_stage4_day": 7.0,
+      "iqr_first_stage4_day": 2.0
+    },
+    {
+      "storage_group": "Tam",
+      "storage_description": "Ambient",
+      "independent_fruits": 143,
+      "workbook_records": 2926,
+      "available_jpegs": 2924,
+      "median_first_stage4_day": 7.0,
+      "iqr_first_stage4_day": 1.0
+    }
+  ],
+  "median_first_stage4_day_overall": 8.0,
+  "fruits_without_stage4": 52,
+  "fruits_without_stage5": 68,
+  "interpretation_boundary": "Descriptive associations are DATA-DEMONSTRATED for this dataset; causal temperature effects are not identified because storage assignment, harvest batch, and ambient conditions are not jointly randomized and fully recorded."
+}

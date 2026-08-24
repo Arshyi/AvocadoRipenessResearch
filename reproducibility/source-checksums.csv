@@ -1,0 +1,10 @@
+path,bytes,sha256_or_commit,role
+data/raw/Hass-Avocado-Ripening-Photographic-Dataset-v1.zip,418384370,FB14C3D8C6FB59A20BFFB579A5FE97C7EBA7030F4420882E8A75B575FF0C5BB6,Complete licensed primary archive
+data/raw/Avocado-Strawberry-Ripening-Stages-v1.zip,2110769149,48B8E6B84DD3C58643F624C12689AF6E81A73E2A4CA8D7EB5BBFA7C507BE4224,Licensed auxiliary archive retained because structure needs resolution
+data/raw/DeepHS-Fruit-annotations-upd-2024-01-09.zip,165730,14275450E362684BC379A5AAF6C845CF82B0F9D5912036B9401D59A4B964A3F3,Small official annotation artifact retained for schema audit
+data/raw/DeepHS-Fruit-readme.txt,298,F4CDD2EFC40FF49740EE7CAD118CB019E227BF119F24506194919E15380513CA,Official file-server readme snapshot
+data/raw/hass_avocado_mendeley_hf_mirror/hass_avocado_9899rows.parquet,301458815,05648F7B3761ED9B24A874FE08EE3BB62DAA6BAA0099D190AAC486E4737B360A,Incomplete third-party mirror retained as provenance evidence
+data/raw/hass_avocado_mendeley_hf_mirror/Avocado Ripening Dataset.xlsx,633351,F8ABEABA6EEDF67869907B3A71EE132CD89B42BB3DCCE6B25DDB22E6269B51A7,Mirror workbook
+data/raw/source_repositories/deephs_fruit,,5f47812a3fb5bd8f0ed5367cedf9b464f83076c1,Inspected official repository commit
+data/raw/source_repositories/RipeTrack,,bf2a152eadfb322d55bb6345b34002e75fe97fb7,Inspected official repository commit
+

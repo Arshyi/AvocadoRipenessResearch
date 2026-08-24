@@ -1,0 +1,24 @@
+# ---------------------------------------------------------------------
+# Third-party raw datasets (3.2 GB).
+# The project's own policy in data/raw/README.md is that raw sources are
+# immutable inputs, not committed artefacts. They are redownloadable from
+# the DOIs recorded in data/dataset_inventory.csv.
+# ---------------------------------------------------------------------
+data/raw/
+
+# ---------------------------------------------------------------------
+# Third-party published papers. Copyrighted by their publishers
+# (Nature, MDPI, IEEE, NIH); citable but not redistributable.
+# Full references are in appendices/appendix-b-bibliography.md.
+# ---------------------------------------------------------------------
+Papers(toReadAndCiteMaybeLater)/
+
+# ---------------------------------------------------------------------
+# Non-deliverable intermediates, including a vendored Python environment.
+# The proposal builder that used to live here is now tools/.
+# ---------------------------------------------------------------------
+tmp/
+
+__pycache__/
+*.pyc
+.venv/

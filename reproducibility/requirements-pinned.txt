@@ -1,0 +1,17 @@
+# Locally verified on 2026-07-30 with Python 3.12.13.
+# Install into an isolated environment; hardware/firmware packages are specified
+# separately in Appendix F and must be pinned when that implementation begins.
+numpy==2.5.1
+pandas==3.0.5
+Pillow==12.3.0
+openpyxl==3.1.5
+pyarrow==21.0.0
+scikit-learn==1.7.1
+scipy==1.16.1
+matplotlib==3.10.5
+seaborn==0.13.2
+joblib==1.5.1
+reportlab==4.4.9
+pdfplumber==0.11.9
+pypdf==6.10.0
+
