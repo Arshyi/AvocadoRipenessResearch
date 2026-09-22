@@ -1,5 +1,7 @@
 # Multimodal Avocado Ripeness Research Program
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22888386.svg)](https://doi.org/10.5281/zenodo.22888386)
+
 Phases 1-14 are complete as a research-design and computational-baseline
 release. The workspace contains an evidence-audited proposal for non-destructive
 Hass avocado ripeness and remaining-useful-life estimation, a licensed public
@@ -125,7 +127,10 @@ inventory as `NO VERIFIED LICENSE` were never downloaded or used.
 Machine-readable metadata is in [CITATION.cff](CITATION.cff).
 
 > Mehran, A. (2026). *Multimodal Avocado Ripeness Research Program* (v1.0.0).
-> https://github.com/Arshyi/AvocadoRipenessResearch
+> Zenodo. https://doi.org/10.5281/zenodo.22888387
+
+The concept DOI [10.5281/zenodo.22888386](https://doi.org/10.5281/zenodo.22888386)
+always resolves to the latest version.
 
 This is a research proposal with computational baselines. It is **not peer
 reviewed**, and its model results are an internal fruit-grouped benchmark on a
