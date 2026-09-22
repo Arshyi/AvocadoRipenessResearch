@@ -108,3 +108,27 @@ The derived feature tables under `data/processed/` **are** included. They come
 from the *Hass Avocado Ripening Photographic Dataset*, which is CC BY 4.0 and
 therefore redistributable with attribution; the two datasets recorded in the
 inventory as `NO VERIFIED LICENSE` were never downloaded or used.
+
+## Licensing
+
+- **Code** (`analysis/`, `ml/`, `models/`, `tools/`, `reproducibility/`) —
+  MIT, see [LICENSE](LICENSE).
+- **Proposal, appendices, reports, figures, tables, derived data and the
+  trained model artefact** — CC BY 4.0, see
+  [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
+- **Third-party attribution and dataset rights status** —
+  see [NOTICE.md](NOTICE.md). The derived tables in `data/processed/` are
+  adaptations of a CC BY 4.0 dataset and carry its attribution requirement.
+
+## Citation
+
+Machine-readable metadata is in [CITATION.cff](CITATION.cff).
+
+> Mehran, A. (2026). *Multimodal Avocado Ripeness Research Program* (v1.0.0).
+> https://github.com/Arshyi/AvocadoRipenessResearch
+
+This is a research proposal with computational baselines. It is **not peer
+reviewed**, and its model results are an internal fruit-grouped benchmark on a
+single public dataset rather than evidence of deployment performance. Please
+cite the underlying dataset (DOI [10.17632/3xd9n945v8.1](https://doi.org/10.17632/3xd9n945v8.1))
+alongside this repository.

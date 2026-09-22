@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: Multimodal Avocado Ripeness Research Program
+message: >-
+  If you use this proposal, its code or its derived data, please cite it as
+  below, and cite the underlying Mendeley dataset separately (see NOTICE.md).
+type: software
+authors:
+  - given-names: Arshyia
+    family-names: Mehran
+    orcid: https://orcid.org/0009-0008-7960-2536
+    affiliation: University of British Columbia
+repository-code: https://github.com/Arshyi/AvocadoRipenessResearch
+abstract: >-
+  An evidence-audited research proposal for non-destructive Hass avocado
+  ripeness and remaining-useful-life estimation, released together with
+  reproducible computational baselines. Includes a dataset rights audit,
+  fruit-grouped machine-learning baselines with leakage controls and bootstrap
+  confidence intervals, storage-condition stress tests, candidate kinetic
+  models, a prototype architecture with an audited bill of materials, and a
+  statistical plan. Results are an internal benchmark on one public CC BY 4.0
+  dataset and are not a deployment claim. Not peer reviewed.
+keywords:
+  - avocado
+  - fruit ripeness
+  - non-destructive sensing
+  - machine learning
+  - reproducibility
+  - research proposal
+license: MIT
+license-url: https://github.com/Arshyi/AvocadoRipenessResearch/blob/main/LICENSE-CONTENT.md
+version: 1.0.0
+date-released: '2026-09-21'
