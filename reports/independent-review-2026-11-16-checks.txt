@@ -1,0 +1,60 @@
+Independent review checks, AvocadoRipenessResearch
+classifier rows: 14710   regression rows: 8834
+
+== 1. Storage shift: in-distribution (5-fold fruit-grouped OOF) versus held-out
+   group fruits  images img/fruit  bal.acc in-distribution  bal.acc held out   drop  training images when held out
+   T10      192    8866      46.2                    0.731             0.497  0.233                           5844
+   T20      143    2920      20.4                    0.754             0.688  0.066                          11790
+   Tam      143    2924      20.4                    0.710             0.632  0.078                          11786
+   pooled in-distribution balanced accuracy: 0.731 on 14710 images
+
+== 2. Image-weighted versus fruit-weighted accuracy
+   image-weighted 0.739   fruit-weighted 0.748   worst-decile fruit 0.591   fruits below 0.5: 16 of 478
+
+== 3. The two sides of one fruit on one day carry the same label. Do the predictions agree?
+   fruit-days with two images: 7355 of 7355; pairs whose TRUE stages differ: 0
+   predictions agree: 0.756   both right: 0.626   one right: 0.226   both wrong: 0.148
+
+== 4. True stages never go backwards within a fruit and side. Do predictions?
+   consecutive steps: 13754   true-stage decreases: 0   predicted-stage decreases: 651 (4.7%)   fruits with at least one: 309 of 478
+
+== 5. Row-normalised confusion of the selected classifier
+   true\pred      1      2      3      4      5
+           1   0.88   0.12   0.00   0.00   0.00   n=3568
+           2   0.20   0.65   0.14   0.00   0.00   n=2228
+           3   0.00   0.09   0.74   0.14   0.03   n=2756
+           4   0.00   0.00   0.17   0.64   0.19   n=3294
+           5   0.00   0.00   0.04   0.22   0.74   n=2864
+   adjacent-stage errors: 24.5%   two or more stages off: 1.6%
+
+== 6. Days to first stage 4: mean absolute error in days
+   rows 8834, fruits 426; baselines are medians of the target within a cell
+   predictor                                                   in-sample  5-fold by fruit
+   image model as published (colour features only)                                  1.853
+   global median (the published dummy)                             3.746            3.746
+   true current stage                                              2.209            2.213
+   storage group                                                   3.242            3.242
+   storage group + true current stage                              1.391            1.404
+   storage group + days elapsed (no image at all)                  1.144            1.147
+   by storage group (5-fold by fruit for the calendar baseline):
+     T10: n= 5342  image model 1.934   storage group + days elapsed 1.414   mean target 7.75 d
+     T20: n= 1754  image model 1.672   storage group + days elapsed 0.830   mean target 2.98 d
+     Tam: n= 1738  image model 1.788   storage group + days elapsed 0.647   mean target 2.93 d
+
+== 7. Within one storage group on one day, does the image model rank fruits correctly?
+   residual = value minus the median over all fruits in the same group on the same day
+   T10  n= 5342  SD of true residual 2.18 d   correlation(model residual, true residual) +0.430   share of residual variance 18.5%
+   T20  n= 1754  SD of true residual 1.06 d   correlation(model residual, true residual) +0.224   share of residual variance 5.0%
+   Tam  n= 1738  SD of true residual 1.00 d   correlation(model residual, true residual) +0.305   share of residual variance 9.3%
+   all  n= 8834  SD of true residual 1.82 d   correlation(model residual, true residual) +0.371   share of residual variance 13.8%
+
+== 8. Source dataset: follow-up, removals and batch structure
+   T10: 192 fruits; first-day dates {'2022-04-03': 48, '2022-04-04': 144}; first-day stage {1: 192}
+       last observed day -> fruits: {1: 5, 3: 3, 5: 3, 7: 3, 9: 3, 11: 3, 13: 3, 15: 3, 17: 3, 19: 3, 21: 3, 23: 3, 25: 3, 26: 151}
+       reached stage 4: 166 (first stage-4 day median 17, SD 2.57, range 5-20); never reached: 26, of which removed before the group's last day: 26
+   T20: 143 fruits; first-day dates {'2022-04-03': 48, '2022-04-04': 95}; first-day stage {1: 143}
+       last observed day -> fruits: {1: 5, 3: 3, 5: 3, 7: 3, 9: 3, 11: 126}
+       reached stage 4: 130 (first stage-4 day median 7, SD 1.16, range 4-9); never reached: 13, of which removed before the group's last day: 13
+   Tam: 143 fruits; first-day dates {'2022-04-03': 48, '2022-04-04': 95}; first-day stage {1: 143}
+       last observed day -> fruits: {1: 5, 3: 3, 5: 3, 7: 3, 9: 3, 11: 126}
+       reached stage 4: 130 (first stage-4 day median 7, SD 1.10, range 4-9); never reached: 13, of which removed before the group's last day: 13
